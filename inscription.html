@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/inscription.css">
+		<link rel="stylesheet" type="text/css" href="css/header.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<title>Sign In | Médiathèque de Disney</title>
+
+	</head>
+	<body>
+		<header>
+			
+			<img class="logo" src="images/Walt-Disney-Logo.png" Alt="Walt Disney Logo">
+
+			<img class="buttonmenu" src="images/menu.jpg" Alt="Menu Button">
+
+
+			<h1>Médiathèque de DisneyLand</h1>
+
+			<nav class="login">
+				<a href="inscription.html">Sign in</a>
+				<a href="connect.html">Log in</a>
+			</nav>
+
+
+			<nav class="menu">
+				<a href="index.html">Accueil</a>
+				<a href="#">Médias</a>
+				<a href="#">Evènement</a>
+				<a href="#">Le coin des enfants</a>
+				<a href="#">Les adhérents</a>
+			</nav>
+
+		</header>
+
+		<div class="content">
+			<h1>Inscription</h1>
+
+			<form method="POST" action="article.html">
+				<div class="inputblock">
+					<label for="nom">Nom : </label>
+					<input type="text" name="nom" id="nom">
+				</div>
+				<div class="inputblock">
+					<label for="prenom">Prénom : </label>
+					<input type="text" name="prenom" id="prenom">
+				</div>
+				<div class="inputblock">
+				<label for="genre">Genre : </label>
+					<select name="genre" id="genre">
+		           		<option value="femme">Femme</option>
+		           		<option value="homme">Homme</option>
+		           		<option value="enfant">Enfant</option>
+		           	</select>
+	           	</div>
+	           	<div class="inputblock">
+					<label for="naissance">Date de naissance : </label>
+					<input type="date" name="naissance" id="naissance">
+				</div>	
+				<div class="inputblock">
+					<label for="age">Age : </label>
+					<input type="number" min="0" max="99" name="age" id="age">
+				</div>
+				<div class="inputblock">
+					<label for="mail">Email : </label>
+					<input type="email" name="mail" id="mail">
+				</div>	
+				<div class="inputblock">
+					<label for="nadress">N° de voie : </label>
+					<input type="number" name="nadress" id="nadress">
+				</div>	
+				<div class="inputblock">
+					<label for="adress">Nom de voie : </label>
+					<input type="text" name="adress" id="adress">
+				</div>	
+				<div class="inputblock">
+					<label for="cp">Code postal : </label>
+					<input type="number" name="cp" id="cp">
+				</div>	
+				<div class="inputblock">
+					<label for="ville">Ville : </label>
+					<input type="text" name="ville" id="ville">
+				</div>
+				<div class="inputblock">
+					<label for="abonnement">Date d'abonnement : </label>
+					<input type="date" name="abonnement" id="abonnement">
+				</div>	
+				<input type="submit" value="Envoyer">
+
+				<!--<select>
+					<optgroup label="Internet">
+						<option value="google">Google</option>
+						<option value="free">Free</option>
+						<option value="caramail">Caramail</option>
+					</optgroup>
+					<optgroup label="Lettre">
+						<option value="fr">FR</option>
+						<option value="eu">EU</option>
+					</optgroup>
+				</select>-->
+			</form>
+		</div>
+		
+		<footer>
+			<nav>
+				<a href="#">FAQ</a>
+				<a href="#">Archives</a>
+				<a href="#">Réglement</a>
+				<a href="#">Crédit</a>
+				<a href="#">Plan du site</a>
+			</nav>
+			Powered by <span>Mickey</span>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+html{
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+	background-color: black;
+	/*background-image: url("../images/disney_castle.jpg");*/
+	color: white;
+	font-family: "Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+	min-height: 100%;
+}
+
+.col-md-1{
+	border-style: solid;
+}
+
+/* Content correspond aux elements du contenu du site ici article et aside */
+.content{
+	padding-bottom: 104px; /* padding de la taille du footer pour laisser un espace vide derrière le footer */
+	min-height: 100%;
+}
+
+/* Section contient les articles résultat de la recherche */
+
+section{
+	position: relative;
+	background-color: #6D5984;
+	display: inline-block;
+	margin: 1% 1%;
+	padding: 5px;
+	width: 75%;
+}
+
+section article{
+	min-height: 350px;
+}
+
+section article iframe{
+	float: left;
+	margin-bottom: 20px;
+}
+
+section article p{
+	font-size: 15px;
+}
+
+/* lastread = date de dernière lecture de l'article */
+
+.lastread{
+	animation: wink 2s infinite;
+}
+
+/* Animation : clignotement */
+@keyframes wink{
+    0%   {opacity: 1.0;}
+    25%  {opacity: 0.5;}
+    50%  {opacity: 0.0;}
+    75%  {opacity: 0.5;}
+    100% {opacity: 1.0;}
+}
+
+.asidelateral{
+	width: 20%;
+	display: inline-block;
+	margin-top: 1%;
+	vertical-align: top;
+}
+
+/* Formulaire de recherche */
+form{
+	position: relative;
+	background-color: #6D5984;
+	padding: 5px;
+}
+
+form input{
+	border-radius: 3px;
+	border: 1px solid #615555;
+	padding: 5px;
+	transition: all 0.5s ease;
+}
+
+form input:hover{
+	background-color: #615555;
+	color: white;
+}
+
+form input:focus{
+	background-color: #615555;
+	color: white;
+}
+
+.reseaux{
+	position: relative;
+	background-color: #6D5984;
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+.reseaux img{
+	width: 15%;
+}
+
+hr{
+	position: relative;
+	width: 70%;
+	color: black;
+	background-color: white;
+	height: 3px;
+}
+
+aside {
+	position: relative;
+	clear: both;
+	text-align: center;
+}
+
+aside video{
+	width: 75%;
+}
+
+
+@media only screen and (max-width : 768px) {
+	aside{
+		display: none;
+	}
+	section,
+	.asidelateral{
+		width: 100%;
+	}
+}

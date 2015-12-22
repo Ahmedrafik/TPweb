@@ -1,0 +1,71 @@
+html{
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+	background-color: black;
+	color: white;
+	font-family: "Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+	min-height: 100%;
+}
+
+/* Content correspond aux elements du contenu du site ici article et aside */
+.content{
+	padding-bottom: 104px; /* padding de la taille du footer pour laisser un espace vide derrière le footer */
+	min-height: 100%;
+}
+
+h1{
+	text-align: center;
+}
+
+form{
+	margin-top: 15px;
+	display: block;
+	padding: 5px;
+}
+
+form .inputblock{
+	width: 32%;
+	display: inline-block;
+}
+
+form input, select{
+	display: block;
+	width: 80%;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	border: 1px solid #615555;
+	padding: 5px;
+	transition: all 0.5s ease;
+}
+
+form input[type="submit"]{
+	width: 30%;
+	margin:auto ;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+form input:focus,
+	input:hover,
+	select:focus,
+	select:hover{
+	background-color: #615555;
+	color: white;
+}
+
+@media only screen and (max-width : 768px) {
+	form .inputblock{
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	form .inputblock{
+		width: 90%;
+	}
+}

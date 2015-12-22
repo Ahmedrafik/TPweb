@@ -1,0 +1,79 @@
+header{
+	padding: 2%;
+	background-image: url("../images/disney_castle.jpg");
+}
+
+.logo{
+	width: 15%;
+	position: absolute;
+}
+
+header h1{
+	position: relative;
+	display: inline-block;
+	margin-left: 30%;
+}
+
+header button{
+	position: relative;
+	width: 10%;
+	cursor:hand; 
+	display: none;
+}
+
+header button img{
+	width: 100%;
+}
+
+.login{
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+
+.menu{
+	text-align: center;
+}
+
+header a{
+	position: relative;
+	padding-top: 5px;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	height: 25px;
+	width: 150px;
+	background-color: #6D5984;
+	text-align: center;
+	text-shadow:1px 1px 1px white;
+	cursor: pointer;
+	font-size: 15px;
+	margin-left: 15px;
+	border-radius: 5px;
+	transition: background-color 2s, color 2s;
+}
+
+header a:hover{
+	color: white;
+	background-color: #5B00D1;
+	transition: background-color 2s, color 2s;
+}
+
+@media only screen and (max-width : 768px) {
+	.login,
+	.menu{
+		display: none;
+	}
+	header button{
+		display:block;
+		float: right;
+	}
+	header h1{
+		margin: 0;
+		text-align: center;
+	}
+
+	iframe{
+		width: 100%;
+	}
+}

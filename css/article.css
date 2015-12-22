@@ -1,0 +1,46 @@
+body{
+	background-color: black;
+	color: white;
+	font-family: "Courier New", serif, Arial;
+}
+
+header{
+	padding: 2%;
+}
+
+header img{
+	width: 15%;
+}
+
+header h1{
+	display: inline-block;
+	margin-left: 15%;
+}
+
+
+section{
+	margin: 20px 5%;
+}
+
+section article iframe{
+	display: inline-block;
+	float: left;
+	margin-bottom: 20px;
+}
+
+hr{
+   width: 70%;
+   color: #B4AF91;
+   height: 3px;
+
+}
+
+aside {
+	clear: both;
+	text-align: center;
+}
+
+aside video{
+	width: 75%;
+}
+

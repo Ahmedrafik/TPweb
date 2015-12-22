@@ -1,0 +1,24 @@
+.menu{
+	text-align: center;
+}
+
+.menu a{
+	position: relative;
+	padding-top: 5px;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	height: 25px;
+	width: 150px;
+	background-color: #6D5984;
+	text-align: center;
+	text-shadow:1px 1px 1px white;
+	cursor: pointer;
+	font-size: 15px;
+	margin-left: 15px;
+}
+
+.menu a:hover{
+	color: white;
+	background-color: #5B00D1;
+}
