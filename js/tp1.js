@@ -148,7 +148,6 @@ console.log(livre2.emprunte);
 console.log(bd[2].emprunte);
 */
 console.log('taille du rayon bd : ', sizeRayon(bd));
-var bok
 
 console.log(bd);
 
@@ -164,3 +163,24 @@ function nbLivreDisponible(rayon){
 };
 
 console.log('Nombre de bd disponible :', nbLivreDisponible(bd));
+
+function addBook(titre, emprunte, rayon){
+	var livre = new Livre();
+	livre.setTitle(titre);
+	if (emprunte){
+		livre.setEmprunt();
+	}
+	rayon.push(livre);
+}
+
+addBook('le roi lion', true, bd);
+addBook('la reine des neiges', true, bd);
+addBook('la petite sirène', false, bd);
+addBook('Star Wars', false, bd);
+addBook('Vice-verca', false, bd);
+addBook('Le voyage d\'Arlo', true, bd);
+
+console.log('Nombre de bd disponible :', nbLivreDisponible(bd));
+console.log('taille du rayon bd : ', sizeRayon(bd));
+
+console.log(bd);
