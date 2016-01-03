@@ -1,0 +1,112 @@
+body{
+	overflow-x:hidden;
+	background-color: black;
+	color: white;
+	font-family: "Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+}
+
+.container{
+	padding: 0;
+}
+
+/* Diapo d'actu */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}
+
+.carousel-caption {
+	position: relative;
+	margin: auto;
+	left: 0;
+}
+
+/* Fiche à onglet & commentaire*/
+
+.toggleactu, .comment{
+	margin-top: 10px;
+	background-color: #ECCEF5;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	color: black;
+}
+
+.toggleactu ul li{
+	background-color: #DA81F5;
+	border-radius: 3px;
+	font-size: large;
+	color: black;
+}
+
+.toggleactu ul a{
+	color: #6E6E6E;
+}
+
+.toggleactu ul li.active a{
+	color: #6E6E6E;
+}
+
+
+.toggleactu ul li a:hover{
+	background-color: #DA81F5;
+	border-color: transparent;
+	color: white;
+}
+
+.tab-content{
+	background-color: white;
+	width: 100%;
+	color: black;
+	padding: 10px;
+}
+
+.tab-content h4{
+	color: #DA81F5;
+}
+
+.tab-content a:hover{
+	text-decoration: none;
+}
+.tab-content h4:hover{
+	color: #6E6E6E;
+}
+
+.tab-content hr, .comment hr{
+	border-top:1px solid #9D9D9D;
+	padding: 0;
+}
+
+.news h4{
+	font-size: medium;
+}
+
+/* commentaires */
+
+.comment a{
+	text-decoration: none;
+	color: #DA81F5;
+}
+
+.comment-date{
+	font-style: italic;
+	color: #6E6E6E;
+}
+
+.comment-text{
+	font-size: x-small;
+	color: #6E6E6E;
+}
+
+/* Formulaire de recherche */
+
+aside .aside-block{
+	background-color: #ECCEF5;
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+

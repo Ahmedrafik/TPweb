@@ -1,0 +1,150 @@
+/* Header */
+
+header{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+/* Classes spécifique aux mobile */
+
+.banner-xs{
+	height: 60px;
+	position: fixed;
+	z-index: 2;
+}
+
+header .banner-xs .mickey{
+	width: 85px;
+}
+
+header .banner-xs .logo{
+	width: 140px;
+}
+
+i{
+	padding-top: 10px;
+}
+
+i:active{
+	color: red;
+}
+
+/* Classes spécifique aux écrans */
+header .bannerhead{
+	margin: 0;
+	padding: 5px;
+	background-color: black;
+	background-image: url("../images/disney_castle.jpg");
+}
+
+
+/* Classes présente sur tous les écrans */
+
+header form{
+	position: absolute;
+	z-index: 2;
+	width:38%;
+	left: 60%;
+	top: -150px;
+	margin-right: 10px;
+	padding: 5px;
+	background-color: red;
+	border-radius: 3px;
+	transition:top 2s;
+}
+
+header form .inputblock{
+	display: inline-block;
+}
+
+header form:hover{
+	top: 5px;
+}
+
+header form a{
+	color: white;
+}
+
+header form a:hover{
+	color: black;
+}
+
+header form input{
+	color: black;
+}
+
+nav{
+	padding: 5px 0;
+	background-color: #6D5984;
+	margin: 0;
+}
+
+.header-btn{
+	background-color: #6D5984;
+	color: black;
+	text-shadow:1px 1px 1px white;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.btn:hover{
+	color: white;
+	background-color: #5B00D1;
+}
+
+.adress{
+	margin: 10px 0;
+}
+
+
+/* Animations */
+
+header button:hover + form{
+	top: 5px;
+}
+
+header i:hover + form{
+	top: 5px;
+}
+
+/* Media queries */
+
+
+@media (max-width: 768px){
+	header .bannerhead{
+		display: none;
+	}
+	
+	header form{
+		width: 50%;
+		left: 45%;
+	}
+	header .menu{
+		position: fixed;
+		z-index: 1;
+		top: 60px;
+		left: -250px;
+		padding: 0;
+		height: 100%;
+	}
+	.btn{
+		padding: 15px 0;
+		width: 100%;
+		border-radius: 0;
+	}	
+	.adress{
+		margin-top: 65px;
+	}
+}
+
+@media (min-width: 768px){
+	header .banner-xs{
+		display: none;
+	}
+	nav{
+		border-radius: 5px;
+	}
+}
+
+

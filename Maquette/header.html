@@ -1,1 +1,59 @@
-<p>ceci est mon header !!</p>
+<nav class="banner-xs col-xs-12 container">
+	<div class="col-xs-3">
+		<img class="mickey col-xs-12" src="images/mickey.jpg">
+	</div>
+	<div class="col-xs-5 container">
+		<a href="index.html"><img  class="logo col-xs-12" src="images/Walt-Disney-Logo.png" Alt="Walt Disney Logo"/></a>
+	</div>
+
+	<i class="menubutton col-xs-2 fa fa-bars fa-3x" onclick="move(document.getElementsByClassName('menu')[0], -250, 0)" ></i>
+	<i class="col-xs-2 fa fa-user fa-3x"></i>
+
+	<form method="POST" action="article.html">
+		<div class="inputblock">
+			<label for="login" class="sr-only">Login</label>
+			<input class="col-xs-12" type="text" placeholder="Login" name="login" id="login"/>
+		</div>
+		<div class="inputblock">
+			<label for="pass" class="sr-only">Mot de passe</label>
+			<input class="col-xs-12" type="password" placeholder="Password" name="pass" id="pass" />
+		</div>	
+		<input type="submit" value="Envoyer"></br>
+		<a href="reinitpass.html">Mot de passe oublié ? / </a>
+		<a href="inscription.html">Créer un compte ?</a>
+	</form>
+</nav>
+<div class="col-xs-12 bannerhead">
+	
+	<div class="col-xs-7 col-md-3">
+		<a href="index.html"><img  class="col-xs-12" src="images/Walt-Disney-Logo.png" Alt="Walt Disney Logo"/></a>
+	</div>
+
+	<a class="col-xs-offset-6 col-xs-1 header-btn btn" href="inscription.html">Sign In</a>
+	<button class="col-xs-1 header-btn btn" type="button">Log In</button>
+
+	<form method="POST" action="article.html">
+		<div class="inputblock">
+			<label for="login" class="sr-only">Login</label>
+			<input class="col-xs-12" type="text" placeholder="Login" name="login" id="login"/>
+		</div>
+		<div class="inputblock">
+			<label for="pass" class="sr-only">Mot de passe</label>
+			<input class="col-xs-12" type="password" placeholder="Password" name="pass" id="pass" />
+		</div>	
+		<input type="submit" value="Envoyer"></br>
+		<a href="reinitpass.html">Mot de passe oublié ?</a>
+	</form>
+
+</div>
+
+<nav class="menu col-xs-4 col-md-12">
+	<a class="col-xs-12 col-md-2 header-btn btn btn-menu" href="index.html">Accueil</a>
+	<a class="col-xs-12 col-md-2 header-btn btn btn-menu" href="#">Médias</a>
+	<a class="col-xs-12 col-md-2 header-btn btn btn-menu" href="#">Evènement</a>
+	<a class="col-xs-12 col-md-2 header-btn btn btn-menu" href="#">Coin enfants</a>
+	<a class="col-xs-12 col-md-2 header-btn btn btn-menu" href="#">Espace Pro</a>
+</nav>
+
+
+

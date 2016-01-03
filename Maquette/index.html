@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 		<script type="text/javascript" src="js/insert.js"></script>
@@ -11,10 +13,206 @@
 		<title>Accueil | Médiathèque de Disney</title>
 	</head>
 	<body class="container">
-		<header id="header">
+		
+		<!-- Header -->
 
-		</header>
+		<header class="container"></header>
+
+		<p class="adress col-xs-12">Vous êtes ici : </p>
+
+
+		<div class="content">
+
+			<section class="container col-xs-12 col-md-8">
+			
+				<!-- Carousel d'actaualité -->
+				
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="images/actu/actu-1.jpg" alt="Chania">
+							<div class="carousel-caption">
+								<h3>Disney Infinty 3.0</h3>
+								<p>Des personnages légendaires. Des aventures extraordinaires. Unissez vos forces !</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/actu/actu-2.jpg" alt="Chania">
+							<div class="carousel-caption">
+								<h3>La reine des neiges</h3>
+								<p>La princesse disney Elsa alias la reine des neiges devient la reine de l'apero !</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/actu/actu-3.jpg" alt="Flower">
+							<div class="carousel-caption">
+								<h3>Star Wars - Le reveil de la force</h3>
+								<p>Un nouvel épisode de la saga "Star Wars", 30 ans après les événements du "Retour du Jedi".</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="images/actu/actu-4.jpeg" alt="Flower">
+							<div class="carousel-caption">
+								<h3>Cendrillon / Lady Gaga</h3>
+								<p>Maraine la bonne fée devient styliste pour Lady Gaga</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<!-- Actualité & Nouveauté -->
+
+				<div class="container toggleactu">
+
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#actu" aria-controls="actu" role="tab" data-toggle="tab">Actualité</a></li>
+						<li role="presentation"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">Nouveautés</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="container tab-content">
+						<div role="tabpanel" class="actu tab-pane fade in active" id="actu">
+							<div>
+								<div class="col-xs-8">
+									<a href="article.html"><h4>Disney Infinty 3.0</h4></a>
+									<p>Des personnages légendaires. Des aventures extraordinaires. Unissez vos forces !</p>
+								</div>
+								<img class="col-xs-4" src="images/actu/actu-1.jpg" alt="Disney Infinty 3.0">
+								<hr class="col-xs-12"/>
+							</div>
+							<div>
+								<div class="col-xs-8">
+									<a href="article.html"><h4>La reine des neiges</h4></a>
+									<p>La princesse disney Elsa alias la reine des neiges devient la reine de l'apero !</p>
+								</div>
+								<img class="col-xs-4" src="images/actu/actu-2.jpg" alt="La reine des neiges">
+								<hr class="col-xs-12"/>
+							</div>
+							<div>
+								<div class="col-xs-8">
+									<a href="article.html"><h4>Star Wars - Le reveil de la force</h4></a>
+									<p>Un nouvel épisode de la saga "Star Wars", 30 ans après les événements du "Retour du Jedi".</p>
+								</div>
+								<img class="col-xs-4" src="images/actu/actu-3.jpg" alt="Star wars">
+								<hr class="col-xs-12"/>
+							</div>
+							<div>
+								<div class="col-xs-8">
+									<a href="article.html"><h4>Cendrillon / Lady Gaga</h4></a>
+									<p>Maraine la bonne fée devient styliste pour Lady Gaga</p>
+								</div>
+								<img class="col-xs-4" src="images/actu/actu-4.jpeg" alt="cendrillon">
+								<hr class="col-xs-12"/>
+							</div>
+						</div>
+
+						<div role="tabpanel" class="news tab-pane fade" id="news">
+							<div class="col-xs-6">
+								<div class="col-xs-8">
+									<p>EVENEMENT</p>
+									<a href="article.html"><h4>Les mercredis des Loulous</h4></a>
+								</div>
+								<img class="col-xs-4" src="images/news/atelier.jpg" alt="Atelier Creatif Disney">
+								<hr class="col-xs-12"/>
+							</div>
+							<div class="col-xs-6">
+								<div class="col-xs-8">
+									<p>EVENEMENT</p>
+									<a href="article.html"><h4>Miroir, mon beau miroir ... Histoires de portraits</h4></a>
+								</div>
+								<img class="col-xs-4" src="images/news/debauchery.jpg" alt="Expo Disney Debauchery">
+								<hr class="col-xs-12"/>
+							</div>
+							<div class="col-xs-6">
+								<div class="col-xs-8">
+									<p>EVENEMENT</p>
+									<a href="article.html"><h4>Les mercredis des Loulous</h4></a>
+								</div>
+								<img class="col-xs-4" src="images/news/atelier.jpg" alt="Atelier Creatif Disney">
+								<hr class="col-xs-12"/>
+							</div><div class="col-xs-6">
+								<div class="col-xs-8">
+									<p>EVENEMENT</p>
+									<a href="article.html"><h4>Les mercredis des Loulous</h4></a>
+								</div>
+								<img class="col-xs-4" src="images/news/atelier.jpg" alt="Atelier Creatif Disney">
+								<hr class="col-xs-12"/>
+							</div><div class="col-xs-6">
+								<div class="col-xs-8">
+									<p>EVENEMENT</p>
+									<a href="article.html"><h4>Les mercredis des Loulous</h4></a>
+								</div>
+								<img class="col-xs-4" src="images/news/atelier.jpg" alt="Atelier Creatif Disney">
+								<hr class="col-xs-12"/>
+							</div><div class="col-xs-6">
+								<div class="col-xs-8">
+									<p>EVENEMENT</p>
+									<a href="article.html"><h4>Les mercredis des Loulous</h4></a>
+								</div>
+								<img class="col-xs-4" src="images/news/atelier.jpg" alt="Atelier Creatif Disney">
+								<hr class="col-xs-12"/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Commentaires public -->
+
+				<div class="container comment">
+					<h3>Derniers commentaires publiés</h3>
+					<ul>
+						<li>
+							<a href="article.html">Noël à DisneyLand !</a> - <span>Flash McQueen</span><span> - Il y a </span><span class="comment-date">1 semaines</span>
+							<p class="col-xs-12 comment-text">Bravo Guys ! Dj Pinocchio a été top ! </p>
+							<hr class="col-xs-12"/>
+						</li>
+					</ul>
+				</div>
 
 	
+			<!--<article>
+					<h1>Noël à DisneyLand !</h1>
+					<iframe class="col-xs-6" width="560" height="315" src="https://www.youtube.com/embed/kc84Pf7--uo" frameborder="0" allowfullscreen></iframe>
+					<p>
+						La parade de Noël fut un grand succès cette année encore ! <br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla odio nulla, at pretium urna ullamcorper vitae. Maecenas id leo massa. Etiam volutpat pulvinar elit, ac pellentesque lectus vehicula sit amet. Suspendisse maximus pharetra enim congue blandit. In arcu mauris, lobortis vel risus in, interdum malesuada nibh. Donec aliquet sem et iaculis euismod. Nulla facilisi. Quisque tempor sapien at finibus aliquam. Donec tincidunt justo scelerisque, consequat ligula quis, finibus odio. Praesent vitae eros in lectus hendrerit ultricies eget at lorem. Praesent congue nisl ut ex tempus, eget convallis enim mollis. Sed molestie mattis tellus eget vestibulum.
+					</p>
+					<div class="lastread">
+						Dernière lecture : 25/12/2015
+					</div>
+				</article>
+			-->
+
+			</section><!-- commentaire pour annuler l'espace entre les div
+
+		--><aside class="col-xs-12 col-md-offset-1 col-md-3">
+				
+			</aside>
+		</div>
+
+
 	</body>
 </html>
